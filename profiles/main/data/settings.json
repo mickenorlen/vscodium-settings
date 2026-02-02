@@ -1,0 +1,103 @@
+{
+    "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "ayu",
+    "window.enableMenuBarMnemonics": false,
+    "editor.cursorBlinking": "solid",
+    "workbench.colorCustomizations": {
+        "[Sublime Material Theme - Dark]": {
+            "editor.background": "#222230",
+            "activityBar.background": "#1B1B24",
+            "editor.lineHighlightBackground": "#242436",
+            "editorCursor.background": "#a9a9a9",
+            "editorCursor.foreground": "#a9a9a9",
+
+            "tab.activeBackground": "#2E3137",
+            "tab.inactiveBackground": "#24242C",
+
+            // Sidebar
+            "sideBar.background": "#181820",
+
+            // Titlebar
+            "titleBar.activeBackground": "#191919cc",
+            "titleBar.activeForeground": "#ffffff",
+
+            // Resizable borders
+            "sash.hoverBorder": "#36302a",
+
+            // FILE LIST & SEARCH RESULTS
+            "list.activeSelectionBackground": "#36302a",
+            "list.activeSelectionForeground": "#fcbe81",
+            "list.inactiveSelectionBackground": "#27231f",
+
+            "list.highlightForeground": "#7b9de7",      // blue accent
+            "list.focusOutline": "#674124",
+
+            // Quick input (palette lists, search bar background items)
+            "focusBorder": "#7A4D2A",
+            "list.inactiveFocusOutline": "#5A3A20",
+            "list.hoverBackground": "#36302a",
+            "list.focusBackground": "#7A4D2A",
+            "list.focusForeground": "#bab1a7",
+
+            // Picker group (the divider line + group headers)
+            "pickerGroup.foreground": "#fcbe81",
+            "pickerGroup.border": "#36302a",
+
+            // Text inside Quick Input (search / command palette)
+            "quickInput.foreground": "#9a8a7d",         // good muted sand
+
+            // Buttons
+            "button.foreground": "#fcbe81",
+            "button.background": "#1e3b7a",
+            "button.border": "#0041cf",
+            // "button.hoverBackground": "#3f2e17",
+
+            // Link colors (unchanged—good match)
+            "textLink.foreground": "#fcbe81",
+            "textLink.activeForeground": "#fcbe81",
+        },
+    },
+
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-f>": false,
+        "<C-x>": false,
+        "<C-w>": false,
+        "<C-b>": false,
+        "<C-p>": false,
+    },
+    // "vim.useCtrlKeys": false,
+    "php.suggest.basic": false,
+    "files.insertFinalNewline": true,
+    "files.associations": {
+        "*.com": "NGINX",
+        "*.ts": "typescript",
+        "*.deface": "erb"
+    },
+    "editor.quickSuggestionsDelay": 10,
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": "on",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "gitlens.keymap": "alternate",
+    "breadcrumbs.enabled": true,
+    "editor.tabSize": 2,
+    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    "terminal.integrated.fontSize": 14,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "zenMode.hideLineNumbers": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "workbench.editor.showTabs": "multiple",
+    "gitlens.views.searchAndCompare.files.layout": "list",
+    "[ruby]": {
+        "editor.defaultFormatter": "misogi.ruby-rubocop"
+    },
+    "editor.selectionClipboard": false,
+    "debug.onTaskErrors": "abort",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Sublime Material Theme - Dark",
+    "sync.gist": "30fe414695b470df030dba111a118780",
+}
