@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Nord",
+    // "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "ayu",
     "window.enableMenuBarMnemonics": false,
     "editor.cursorBlinking": "solid",
@@ -93,11 +93,65 @@
     "workbench.editor.showTabs": "multiple",
     "gitlens.views.searchAndCompare.files.layout": "list",
     "[ruby]": {
-        "editor.defaultFormatter": "misogi.ruby-rubocop"
     },
     "editor.selectionClipboard": false,
     "debug.onTaskErrors": "abort",
     "window.autoDetectColorScheme": true,
     "workbench.preferredDarkColorTheme": "Sublime Material Theme - Dark",
     "sync.gist": "30fe414695b470df030dba111a118780",
+    "rubyLsp.rubyVersionManager": {
+        "identifier": "none"
+    },
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "/bin/zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "rubyLsp.formatter": "rubocop",
+    "rubyLsp.enabledFeatures": {
+        "codeActions": true,
+        "diagnostics": true,
+        "documentHighlights": true,
+        "documentLink": true,
+        "documentSymbols": true,
+        "foldingRanges": true,
+        "formatting": true,
+        "hover": true,
+        "inlayHint": true,
+        "onTypeFormatting": true,
+        "selectionRanges": true,
+        "semanticHighlighting": true,
+        "completion": true,
+        "codeLens": false,
+        "definition": true,
+        "workspaceSymbol": true,
+        "signatureHelp": true,
+        "typeHierarchy": true,
+        "test": false
+    },
+    "terminal.external.linuxExec": "konsole",
+    "remote.autoForwardPortsSource": "hybrid",
+    "chat.viewSessions.orientation": "stacked",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.validate": ["javascript"],
 }
