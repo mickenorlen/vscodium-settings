@@ -1,157 +1,212 @@
 {
-    // "workbench.colorTheme": "Nord",
-    "workbench.iconTheme": "ayu",
-    "window.enableMenuBarMnemonics": false,
-    "editor.cursorBlinking": "solid",
-    "workbench.colorCustomizations": {
-        "[Sublime Material Theme - Dark]": {
-            "editor.background": "#222230",
-            "activityBar.background": "#1B1B24",
-            "editor.lineHighlightBackground": "#242436",
-            "editorCursor.background": "#a9a9a9",
-            "editorCursor.foreground": "#a9a9a9",
+  // ==================================================
+  // VIM SETTINGS
+  // ==================================================
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-f>": false,
+    "<C-x>": false,
+    "<C-w>": false,
+    "<C-b>": false,
+    "<C-p>": false
+  },
 
-            "tab.activeBackground": "#2E3137",
-            "tab.inactiveBackground": "#24242C",
 
-            // Sidebar
-            "sideBar.background": "#181820",
+  // ==================================================
+  // FILE HANDLING & ASSOCIATIONS
+  // ==================================================
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.com": "NGINX",
+    "*.ts": "typescript",
+    "*.deface": "erb"
+  },
 
-            // Titlebar
-            "titleBar.activeBackground": "#191919cc",
-            "titleBar.activeForeground": "#ffffff",
+  // ==================================================
+  // EDITOR SETTINGS
+  // ==================================================
+  "editor.quickSuggestionsDelay": 10,
+  "editor.snippetSuggestions": "top",
+  "editor.tabCompletion": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabSize": 2,
+  "editor.selectionClipboard": false,
+  "editor.colorDecorators": true,
+  "editor.cursorBlinking": "solid",
 
-            // Resizable borders
-            "sash.hoverBorder": "#36302a",
+  // ==================================================
+  // RUBY / RUBY LSP SETTINGS
+  // ==================================================
+  "[ruby]": {},
+  "rubyLsp.rubyVersionManager": { "identifier": "none" },
+  "rubyLsp.formatter": "rubocop",
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "completion": true,
+    "codeLens": false,
+    "definition": true,
+    "workspaceSymbol": true,
+    "signatureHelp": true,
+    "typeHierarchy": true,
+    "test": false
+  },
 
-            // FILE LIST & SEARCH RESULTS
-            "list.activeSelectionBackground": "#36302a",
-            "list.activeSelectionForeground": "#fcbe81",
-            "list.inactiveSelectionBackground": "#27231f",
+  // ==================================================
+  // JAVASCRIPT / TYPESCRIPT
+  // ==================================================
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.validate": ["javascript"],
 
-            "list.highlightForeground": "#7b9de7",      // blue accent
-            "list.focusOutline": "#674124",
+  // ==================================================
+  // GIT & GITLENS
+  // ==================================================
+  "gitlens.keymap": "alternate",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "gitlens.views.scm.grouped.views": {
+    "commits": true,
+    "branches": true,
+    "remotes": true,
+    "stashes": true,
+    "tags": true,
+    "worktrees": true,
+    "contributors": true,
+    "fileHistory": false,
+    "repositories": true,
+    "searchAndCompare": true,
+    "launchpad": false
+  },
+  "gitlens.views.searchAndCompare.files.layout": "list",
 
-            // Quick input (palette lists, search bar background items)
-            "focusBorder": "#7A4D2A",
-            "list.inactiveFocusOutline": "#5A3A20",
-            "list.hoverBackground": "#36302a",
-            "list.focusBackground": "#7A4D2A",
-            "list.focusForeground": "#bab1a7",
+  // ==================================================
+  // TERMINAL SETTINGS
+  // ==================================================
+  "terminal.integrated.fontFamily": "Menlo for Powerline",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.profiles.linux": {
+    "bash": { "path": "bash", "icon": "terminal-bash" },
+    "zsh": { "path": "/bin/zsh" },
+    "fish": { "path": "fish" },
+    "tmux": { "path": "tmux", "icon": "terminal-tmux" },
+    "pwsh": { "path": "pwsh", "icon": "terminal-powershell" }
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.external.linuxExec": "konsole",
 
-            // Picker group (the divider line + group headers)
-            "pickerGroup.foreground": "#fcbe81",
-            "pickerGroup.border": "#36302a",
+  // ==================================================
+  // MISC SETTINGS
+  // ==================================================
+  "breadcrumbs.enabled": true,                     // Show the breadcrumb navigation bar at the top of the editor
+  "workbench.editor.showTabs": "multiple",         // Allow multiple editor tabs to be visible at once
+  "window.autoDetectColorScheme": true,            // Automatically switch between light/dark themes based on OS preference
+  "window.enableMenuBarMnemonics": false,          // Disable alt-key mnemonics for menu bar (prevents underlines in menus)
+  "zenMode.hideLineNumbers": false,                // Keep line numbers visible in Zen Mode
+  "debug.onTaskErrors": "abort",                   // Abort debug sessions if a task errors out
+  "remote.autoForwardPortsSource": "hybrid",       // Automatically forward ports from remote containers/WSL; hybrid mode uses both explicit and automatic sources
+  "chat.viewSessions.orientation": "stacked",      // Display multiple chat sessions stacked vertically in the chat view
+  "diffEditor.ignoreTrimWhitespace": false,        // Do not ignore whitespace differences in side-by-side diff editor
+  "php.suggest.basic": false,                      // Disable built-in PHP suggestion provider to avoid conflicts with extensions like Intelephense
 
-            // Text inside Quick Input (search / command palette)
-            "quickInput.foreground": "#9a8a7d",         // good muted sand
 
-            // Buttons
-            "button.foreground": "#fcbe81",
-            "button.background": "#1e3b7a",
-            "button.border": "#0041cf",
-            // "button.hoverBackground": "#3f2e17",
+  // ==================================================
+  // THEME SETTINGS
+  // ==================================================
+  "workbench.preferredDarkColorTheme": "Sublime Material Theme - Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "[Sublime Material Theme - Dark]": {
+      // Editor
+      "editor.background": "#222230",
+      "editor.lineHighlightBackground": "#242436",
+      "editorCursor.background": "#a9a9a9",
+      "editorCursor.foreground": "#a9a9a9",
 
-            // Link colors (unchanged—good match)
-            "textLink.foreground": "#fcbe81",
-            "textLink.activeForeground": "#fcbe81",
-        },
-    },
+      // Tabs
+      "tab.activeBackground": "#2E3137",
+      "tab.inactiveBackground": "#24242C",
 
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-c>": false,
-        "<C-v>": false,
-        "<C-f>": false,
-        "<C-x>": false,
-        "<C-w>": false,
-        "<C-b>": false,
-        "<C-p>": false,
-    },
-    // "vim.useCtrlKeys": false,
-    "php.suggest.basic": false,
-    "files.insertFinalNewline": true,
-    "files.associations": {
-        "*.com": "NGINX",
-        "*.ts": "typescript",
-        "*.deface": "erb"
-    },
-    "editor.quickSuggestionsDelay": 10,
-    "editor.snippetSuggestions": "top",
-    "editor.tabCompletion": "on",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "gitlens.keymap": "alternate",
-    "breadcrumbs.enabled": true,
-    "editor.tabSize": 2,
-    "terminal.integrated.fontFamily": "Menlo for Powerline",
-    "terminal.integrated.fontSize": 14,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "zenMode.hideLineNumbers": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.recentChange.enabled": false,
-    "workbench.editor.showTabs": "multiple",
-    "gitlens.views.searchAndCompare.files.layout": "list",
-    "[ruby]": {
-    },
-    "editor.selectionClipboard": false,
-    "debug.onTaskErrors": "abort",
-    "window.autoDetectColorScheme": true,
-    "workbench.preferredDarkColorTheme": "Sublime Material Theme - Dark",
-    "sync.gist": "30fe414695b470df030dba111a118780",
-    "rubyLsp.rubyVersionManager": {
-        "identifier": "none"
-    },
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-        },
-        "zsh": {
-            "path": "/bin/zsh"
-        },
-        "fish": {
-            "path": "fish"
-        },
-        "tmux": {
-            "path": "tmux",
-            "icon": "terminal-tmux"
-        },
-        "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
-        }
-    },
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "rubyLsp.formatter": "rubocop",
-    "rubyLsp.enabledFeatures": {
-        "codeActions": true,
-        "diagnostics": true,
-        "documentHighlights": true,
-        "documentLink": true,
-        "documentSymbols": true,
-        "foldingRanges": true,
-        "formatting": true,
-        "hover": true,
-        "inlayHint": true,
-        "onTypeFormatting": true,
-        "selectionRanges": true,
-        "semanticHighlighting": true,
-        "completion": true,
-        "codeLens": false,
-        "definition": true,
-        "workspaceSymbol": true,
-        "signatureHelp": true,
-        "typeHierarchy": true,
-        "test": false
-    },
-    "terminal.external.linuxExec": "konsole",
-    "remote.autoForwardPortsSource": "hybrid",
-    "chat.viewSessions.orientation": "stacked",
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "eslint.validate": ["javascript"],
+      // Sidebar
+      "sideBar.background": "#181820",
+
+      // Titlebar
+      "titleBar.activeBackground": "#191919cc",
+      "titleBar.activeForeground": "#ffffff",
+
+      // Sash / borders
+      "sash.hoverBorder": "#36302a",
+
+      // Lists / File Explorer
+      "list.activeSelectionBackground": "#36302a",
+      "list.activeSelectionForeground": "#fcbe81",
+      "list.inactiveSelectionBackground": "#27231f",
+      "list.highlightForeground": "#7b9de7",
+      "list.focusOutline": "#674124",
+      "list.hoverBackground": "#36302a",
+      "list.focusBackground": "#7A4D2A",
+      "list.focusForeground": "#bab1a7",
+      "list.inactiveFocusOutline": "#5A3A20",
+
+      // Quick input / picker
+      "pickerGroup.foreground": "#fcbe81",
+      "pickerGroup.border": "#36302a",
+      "quickInput.foreground": "#9a8a7d",
+      "focusBorder": "#7A4D2A",
+
+      // Buttons
+      "button.foreground": "#fcbe81",
+      "button.background": "#1e3b7a",
+      "button.border": "#0041cf",
+
+      // Links
+      "textLink.foreground": "#fcbe81",
+      "textLink.activeForeground": "#fcbe81"
+    }
+  },
+
+  // ==================================================
+  // MATERIAL ICON THEME SETTINGS
+  // ==================================================
+  "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.folders.color": "#524e45",
+  "material-icon-theme.opacity": 0.75,
+  "material-icon-theme.files.customClones": [
+    { "name": "docker-compose", "base": "docker", "color": "red-900" },
+    { "name": "rspec", "base": "opa", "color": "red-900", "fileNames": [".rspec"] },
+    { "name": "shellspec", "base": "opa", "color": "purple-600", "fileNames": [".shellspec"] },
+    { "name": "erb", "base": "html", "color": "orange-500" },
+    { "name": "yml", "base": "haml", "color": "red-400" },
+    { "name": "shell", "base": "xml", "color": "purple-200" },
+    { "name": "server", "base": "makefile", "color": "orange-800" }
+  ],
+  "material-icon-theme.files.associations": {
+    "*": "shell",
+    "*.html.erb": "erb",
+    "*.yml": "yml",
+    "*.sh": "shell",
+    "orb": "shell",
+    "docker-compose.production.yml": "docker-compose",
+    "docker-compose.yml": "docker-compose",
+    "docker-compose.staging.yml": "docker-compose",
+    "docker-compose.development.yml": "docker-compose",
+    "Procfile.assets": "server",
+    "Procfile.dev": "server",
+    "package.json": "npm",
+    ".shellspec": "shellcheck"
+  }
 }
