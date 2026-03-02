@@ -65,12 +65,12 @@
   },
 
   // ==================================================
-  // JAVASCRIPT / TYPESCRIPT
+  // LANGUAGE SPECIFIC SETTINGS
   // ==================================================
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "eslint.validate": ["javascript"],
-
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   // ==================================================
   // GIT & GITLENS
   // ==================================================
@@ -121,7 +121,6 @@
   "remote.autoForwardPortsSource": "hybrid",       // Automatically forward ports from remote containers/WSL; hybrid mode uses both explicit and automatic sources
   "chat.viewSessions.orientation": "stacked",      // Display multiple chat sessions stacked vertically in the chat view
   "diffEditor.ignoreTrimWhitespace": false,        // Do not ignore whitespace differences in side-by-side diff editor
-  "php.suggest.basic": false,                      // Disable built-in PHP suggestion provider to avoid conflicts with extensions like Intelephense
 
 
   // ==================================================
